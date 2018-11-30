@@ -7,4 +7,5 @@ main.pdf:	main.tex	Chapters/*.tex *.bib Appendices/*.tex  Makefile
 	pdflatex main
 
 clean:
+	rm Chapters/*.aux Appendices/*.aux
 	rm `cat .gitignore`
